@@ -2,12 +2,16 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 vim.opt.conceallevel = 1
+vim.diagnostic.config {
+  float = { border = 'rounded' },
+}
 
 require 'options'
 require 'keymaps'
 require 'lazy-bootstrap'
 require 'lazy-plugins'
 require 'obsidian'
+
 local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 require('lspconfig').clangd.setup {
   capabilities = cmp_nvim_lsp.default_capabilities(),

@@ -3,6 +3,6 @@ return {
     'ellisonleao/glow.nvim',
     config = true,
     cmd = 'Glow',
-    border = 'shadow',
+    border = 'rounded',
   },
 }

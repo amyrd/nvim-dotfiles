@@ -32,4 +32,5 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 20
 
+
 -- vim: ts=2 sts=2 sw=2 et
