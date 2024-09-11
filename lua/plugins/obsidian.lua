@@ -43,6 +43,7 @@ return {
           -- vim.fn.jobstart({"xdg-open", url})  -- linux
         end,
       }
+      vim.keymap.set('n', '-l', ':ObsidianBacklinks<CR>', { desc = 'backlinks' })
       vim.keymap.set('n', '-t', ':ObsidianTemplate<CR>', { desc = 'insert template' })
       vim.keymap.set('n', '-n', ':ObsidianNew<CR>', { desc = 'create new note ' })
       vim.keymap.set('n', '-s', ':ObsidianQuickSwitch<CR>', { desc = 'open obsidian file search' })
